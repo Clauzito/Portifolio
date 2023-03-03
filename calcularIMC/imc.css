@@ -1,0 +1,158 @@
+:root { 
+    --cor-primaria-sucess: rgba(255, 166, 0, 0.547);
+    --cor-secundaria-sucess: rgb(255, 166, 0);
+    --cor-hover-sucess: #eee;
+    }
+      @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Island+Moments&family=Kolker+Brush&family=Noto+Nastaliq+Urdu&display=swap');
+    *{  
+        background-color: #797979;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    }
+    body {
+        padding: 40px;
+    }
+    h1 {
+        padding: 1rem;
+        text-align: center;
+        font-size: 40px;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+    li { 
+        float: right;
+    }
+    a {
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        display: block;
+        position: relative;
+        cursor: pointer;
+        padding: 8px 10px;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    a::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 3px;
+        background-color: rgb(255, 166, 0);
+        transition: width .7s; 
+    }
+    a:hover::before {
+        width: 100%;
+    }
+    #home:hover, #experience:hover, #about:hover, #contact:hover {
+        background-color: var(--cor-primaria-sucess);
+        transition: .3s;
+    }
+    #home:active, #experience:active, #about:active, #contact:active {
+        background-color: var(--cor-secundaria-sucess);
+    }
+    section {
+        position: relative;
+        width: 100%;
+        height: 550PX;
+    }
+   
+    .btn:hover {
+        background-color: orange;
+        color: #fff;
+        box-shadow: 0 10px 20px 0 orange;
+        transition: 300ms ease-in-out;
+    }
+    a:hover {
+        color: #eee;
+    }
+   main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-top: -70px;  
+   }
+   .container {
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    width: 300px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+   }
+   .title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    font: bold 2rem serif;
+    margin-bottom: 10px;
+    background-color: orange;
+    text-decoration: underline black;
+   }
+   .input {
+    display: flex;
+    width: 200px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: baseline;
+    align-self: center;
+    background-color: orange;
+   }
+   .input input {
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    font: bold 1rem serif;
+    text-align: center;    
+   }
+   .input label {
+    
+    background-color: orange;
+    font: bold 1.2rem serif;
+   }
+   button {
+    width: 200px;
+    height: 40px;
+    font: bold 1rem serif;
+    background-color: #797979;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   .result {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+    font: italic 1rem serif;
+    box-shadow: 0 0 15px black;
+    color: #000000;
+    padding: 20px;
+    box-sizing: border-box;
+    user-select: none;
+   }
+#indice {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 130px;
+    top: 150px;
+    left: 100px;
+    font: 1.3rem serif;
+
+}

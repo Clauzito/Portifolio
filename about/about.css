@@ -1,0 +1,154 @@
+:root { 
+    --cor-primaria-sucess: rgba(255, 166, 0, 0.547);
+    --cor-secundaria-sucess: rgb(255, 166, 0);
+    --cor-hover-sucess: #eee;
+    }
+
+  @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Island+Moments&family=Kolker+Brush&family=Noto+Nastaliq+Urdu&display=swap');
+
+    *{  
+        background-color: #888888;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        
+    }
+    body {
+        padding: 50px;
+    }
+    h1 {
+        padding: 1rem;
+        text-align: center;
+        font-size: 40px;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+    .text-sec {
+        display: flex;
+        padding: 8rem;
+        height: 500px;
+        font-size: 18px;
+    }
+    h2 {
+        position: relative;
+        padding: 15px;
+        text-indent: 8em;
+    }
+    #txt-myself {
+        position: relative;
+        left: 10%;
+        justify-content: space-evenly;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+    }
+    li { 
+        float: right;
+    }
+    a {
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        display: block;
+        position: relative;
+        cursor: pointer;
+        padding: 8px 10px;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    a::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 3px;
+        background-color: rgb(255, 166, 0);
+        transition: width .7s; 
+    }
+    a:hover::before {
+        width: 100%;
+    }
+    #home:hover, #experience:hover, #about:hover, #contact:hover {
+        background-color: var(--cor-primaria-sucess);
+        transition: .3s;
+    }
+    #home:active, #experience:active, #about:active, #contact:active {
+        background-color: var(--cor-secundaria-sucess);
+    }
+    img {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        left: 75%;
+        height: 300px;
+        background-color:orange;
+        border-radius: 50%;
+        border: 1.5px solid #000;
+        justify-content: center;
+        z-index: 1;
+
+    }
+    img:hover {
+        transform: scale(1.1);
+
+    }
+    .btn {
+        position: relative;
+        left: 23%;
+        padding: 6px;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        line-height: 40px;
+        max-width: 200px;
+        width: 100%;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        justify-content: center;
+        border-radius: 20px 0px 20px 0;
+        color: black;
+        box-shadow: 0 5px 20px 0 orange;
+        transition: 300ms ease-in-out;
+     
+    }
+    .btn:hover {
+        background-color: orange;
+        color: #fff;
+        box-shadow: 0 10px 20px 1px orange;
+        transition: 300ms ease-in-out;
+        width: 50%;
+    }
+    a:hover {
+        color: #fff;
+    }
+    #skills {
+        position: relative;
+        top: -90px;
+    }
+
+@media (max-width: 700px) {
+        body {
+            margin: 0;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        .h2 {
+            display: flex;
+            flex-direction: column;
+        }
+        .test-sec {
+            display: flex;
+            justify-content: left;
+            font-size: 20px;
+        }
+        nav  {
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+        }
+      }

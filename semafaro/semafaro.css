@@ -1,0 +1,138 @@
+:root { 
+    --cor-primaria-sucess: rgba(255, 166, 0, 0.547);
+    --cor-secundaria-sucess: rgb(255, 166, 0);
+    --cor-hover-sucess: #eee;
+    --cor-redlight-sucess: rgb(255, 0, 0);
+    --cor-yellowlight-sucess: rgb(255, 225, 0);
+    --cor-greenlight-sucess: rgb(21, 255, 0);
+    }
+      @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Island+Moments&family=Kolker+Brush&family=Noto+Nastaliq+Urdu&display=swap');
+    *{  
+        background-color: #797979;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    }
+    body {
+        padding: 40px;
+    }
+    h1 {
+        padding: 1rem;
+        text-align: center;
+        font-size: 40px;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+    li { 
+        float: right;
+    }
+    a {
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        display: block;
+        position: relative;
+        cursor: pointer;
+        padding: 8px 10px;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    a::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 3px;
+        background-color: rgb(255, 166, 0);
+        transition: width .7s; 
+    }
+    a:hover::before {
+        width: 100%;
+    }
+    #home:hover, #experience:hover, #about:hover, #contact:hover {
+        background-color: var(--cor-primaria-sucess);
+        transition: .3s;
+    }
+    #home:active, #experience:active, #about:active, #contact:active {
+        background-color: var(--cor-secundaria-sucess);
+    }
+main {
+  height: 600px;
+}
+.container {
+  width: 200px;
+  height: 500px;
+  background-color: black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 5px 2px 80px 0 black;
+  border: 1px solid white;
+}
+.red-light {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: rgb(255, 0, 0);
+  top: 18%;
+  left: 25%;
+  border-radius: 50%;
+  border: 1px solid white;
+  opacity: 0.2;
+}
+.yellow-light {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 0);
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  border-radius: 50%;
+  border: 1px solid white;
+  opacity: 0.2;
+}
+.green-light {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(0, 255, 0);
+  position: absolute;
+  top: 62%;
+  left: 25%;
+  border-radius: 50%;
+  border: 1px solid white;
+  opacity: 0.2;
+}
+#red-light {
+  background-color: red;
+}
+
+.btnsema {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.redbtnlight, .yellowbtnlight, .greenbtnlight, .automatic {
+  margin: 0 5px;
+  padding: 10px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.redbtnlight:hover {
+  background-color: var(--cor-redlight-sucess);
+}
+.yellowbtnlight:hover {
+    background-color: var(--cor-yellowlight-sucess);
+}
+.greenbtnlight:hover {
+  background-color: var(--cor-greenlight-sucess);
+}
+.automatic:hover {
+  background-image: linear-gradient(to right, red, yellow, green);
+}

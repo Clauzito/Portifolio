@@ -1,0 +1,157 @@
+:root {
+    --cor-primaria-sucess: rgba(255, 166, 0, 0.547);
+    --cor-secundaria-sucess: rgb(255, 166, 0);
+    --cor-hover-sucess: #eee;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Island+Moments&family=Kolker+Brush&family=Noto+Nastaliq+Urdu&display=swap');
+  * {
+    background-color: #797979;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  body {
+    padding: 40px;
+  }
+  h1 {
+    padding: 1rem;
+    text-align: center;
+    font-size: 40px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  li {
+    float: right;
+  }
+  a {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 8px 10px;
+    margin: 0 10px;
+    text-decoration: none;
+  
+  }
+  a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(255, 166, 0);
+    transition: width .7s;
+  }
+  a:hover::before {
+    width: 100%;
+  }
+  #home:hover, #experience:hover, #about:hover, #contact:hover {
+    background-color: var(--cor-primaria-sucess);
+    transition: .3s ease-in-out;
+  }
+  #home:active, #experience:active, #about:active, #contact:active {
+    background-color: var(--cor-secundaria-sucess);
+  }
+  img {
+        height: 300px;
+        width: 300px;
+        border: 1px solid rgb(0, 0, 0);
+        position: relative;
+        margin-left: 60%;
+        background-color: orange;
+        border-radius: 50%;
+        margin-top: -10%;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
+  .texto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 20%;
+    letter-spacing: 1px;
+  }
+  h3 {
+    margin-left: 10%;
+  }
+  .btn {
+    width: 150px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 10px orange;
+    border-radius: 20px 0 20px 0;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+.btn:hover {
+    background-color: orange;
+    color: #fff;
+    box-shadow: 0 10px 20px 1px orange;
+    transition: 300ms ease-in-out;
+}
+footer {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 20px;
+}
+  @media screen and (max-width: 768px) {
+    /* Estilos para telas menores que 768px */
+    body {
+      padding: 20px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    nav ul {
+      float: none;
+      text-align: center;
+    }
+    li {
+      float: none;
+      display: inline-block;
+    }
+    a {
+      margin: 0;
+      margin-left: 20%;
+      transform: none;
+    }
+    .texto { 
+        margin-left: 10%;
+    }
+    img {
+        height: 200px;
+        width: 200px;
+        border: 1px solid rgb(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        margin-left: 40%;
+        background-color: orange;
+        border-radius: 50%;
+        margin-top: 10%;
+    }
+    .btn {
+        margin-left: 0;
+        margin-top: 10%;
+    }
+    .footer {
+       padding: 20px;
+       letter-spacing: 1px;
+       font-size: 18px;
+    }
+    p {
+        margin-top: 15%;
+       font-size: 20px;
+    }
+  }
+  

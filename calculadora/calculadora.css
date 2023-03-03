@@ -1,0 +1,99 @@
+:root { 
+    --cor-primaria-sucess: rgba(255, 166, 0, 0.547);
+    --cor-secundaria-sucess: rgb(255, 166, 0);
+    --cor-hover-sucess: #eee;
+    }
+      @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Island+Moments&family=Kolker+Brush&family=Noto+Nastaliq+Urdu&display=swap');
+    *{  
+        background-color: #797979;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    }
+    body {
+        padding: 40px;
+    }
+    h1 {
+        padding: 1rem;
+        text-align: center;
+        font-size: 40px;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+    li { 
+        float: right;
+    }
+    a {
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        display: block;
+        position: relative;
+        cursor: pointer;
+        padding: 8px 10px;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    a::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 3px;
+        background-color: rgb(255, 166, 0);
+        transition: width .7s; 
+    }
+    a:hover::before {
+        width: 100%;
+    }
+    #home:hover, #experience:hover, #about:hover, #contact:hover {
+        background-color: var(--cor-primaria-sucess);
+        transition: .3s;
+    }
+    #home:active, #experience:active, #about:active, #contact:active {
+        background-color: var(--cor-secundaria-sucess);
+    }
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+.textmaincolor {
+    width: 140px;
+    border-radius: 20px;
+    height:  40px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px orange;
+    padding: 15px;
+    font-size: 20px;
+    color: #eee;
+    margin: 8px;
+}
+.nummaincolor {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+}
+.numblue, .numpin, .numgre, .numpur ,.numora, .textmaincolor2 {
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+}
+form {
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 20px orange;
+    background-color: rgb(23, 23, 23);
+    height: 300px;
+}
